@@ -1,0 +1,14 @@
+name: Pluglets
+version: 0.0.0
+main: org.zonedabone.pluglets.Pluglets
+author: zonedabone
+commands:
+  pluglet:
+    aliases: [pluglets]
+    description: Access to pluglet commands
+permissions:
+  pluglets.*:
+    default: true
+    children:
+      pluglets.load: true
+      pluglets.unload: true
